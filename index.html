@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- today we are gonna tackle main -->
+
 <head>
     <meta charset="utf-8">
     <title>Google</title>
@@ -56,6 +58,36 @@
             border: 1px solid #4285f4;
             border-radius: 2px;
         }
+        main {
+            background: skyblue;
+            text-align: center;
+        }
+        main div {
+            border: 1px solid lightgray;
+        }
+        main img {
+            width: 550px;
+            height: auto;
+        }
+        main button {
+            background: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            text-align: center;
+            height: 36px;
+        }
+        main button:hover {
+            color: #222;
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+        .search-box {}
+        .buttons-container {}
         footer, nav {
             color: #5f6368;
             background: #f2f2f2;
@@ -97,15 +129,18 @@
 
     </nav>
     <main>
-        <figure><img src="googlelogo_color_272x92dp.png"></figure>
-        <form></form>
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <figure><img src="googlelogo_color_272x92dp.png" alt="Google's Logo"></figure>
+        <div id="search-box"></div>
+        <div id="buttons-container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
         <div>Google offered in: 
             <a href="">မြန်မာ (မြန်မာ)</a>
             <a href="">русский</a>
         </div>
     </main>
+
     <footer>Myanmar</footer>
     <nav>
         <div class="nav-item">Advertising</div>
