@@ -5,12 +5,10 @@
     <meta charset="utf-8">
     <title>Google</title>
     <style>
-        body {
-            margin: 15px 0 0 0;
-        }
-        html {
+        body, a {
             font-family: Arial, sans-serif;
             font-size: 14px;
+            margin: 15px 0 0 0;
         }
         header {
             line-height: 40px;
@@ -131,21 +129,37 @@
             border: 1px solid #c6c6c6;
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
         }
-        footer, nav {
+        footer {
             color: #5f6368;
             background: #f2f2f2;
+            border-top: 1px solid #e4e4e4; 
             line-height: 40px;
-            border-top: 1px solid #e4e4e4;
-            padding-left: 27px;
+            width: 100%;  
+            white-space: nowrap;
+            position: fixed;
+            bottom: 0;
+        }
+        #country-name {
+            padding: 0 0 0 30px;
+        }
+        nav {
+            border-top: 1px solid #e4e4e4;  
+            padding: 0 0 0 30px;    
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
-        .nav-item {
-            padding-right: 27px;
+        nav a, nav a:visited {
+            color: #5f6368;
+            text-decoration: none;
+            margin: 0 27px 0 0;
         }
-        #nav-center-item {
-            padding-right: 27px;
-            flex-grow: 1;
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #nav-right{
+            text-align: right;
+            margin-left: 70px;
         }
     </style>
 </head>
@@ -197,15 +211,22 @@
         </div>
     </main>
 
-    <footer>Myanmar</footer>
-    <nav>
-        <div class="nav-item">Advertising</div>
-        <div class="nav-item">Business</div>
-        <div class="nav-item">About</div>
-        <div id="nav-center-item">How search works</div>
-        <div class="nav-item">Privacy</div>
-        <div class="nav-item">Terms</div>
-        <div class="nav-item">Settings</div>
-    </nav>
+
+    <footer>
+        <div id="country-name">Myanmar</div>
+        <nav>
+            <div>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">About</a>
+                <a href="">How search works</a>
+            </div>
+            <div id="nav-right">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
